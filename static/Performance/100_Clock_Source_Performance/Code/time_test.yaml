@@ -87,10 +87,10 @@ Resources:
               content: |
                   #!/usr/bin/python3
                   import time
+                  import ctypes
 
                   _gettimeofday = None
                   def gettimeofday():
-                  	import ctypes
                   	global _gettimeofday
 
                   	if not _gettimeofday:
